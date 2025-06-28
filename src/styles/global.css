@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'Roboto';
+    src: url(/public/src/fonts/Roboto-VariableFont_wdth\,wght.woff2) format('woff2');
+    font-display: swap;
+    font-weight: 100 900;
+}
+
+
+@theme{
+    --color-primary: #967f2e;
+    --color-secondary: #12381d;
+    --color-thirdary: #fffaeb;
+    --color-white: #fff0e5;
+    --color-black: #080a09;
+
+    --color-destructive: #ED145B;
+    --color-background: purple;
+    --color-muted:#000;
+    --color-primary-foreground: #F7941E;
+    --color-cream-foreground: #fff;
+    --color-warm: #fff0e5;
+
+    --text-title: 24px;
+    --text-parrafo: 18px;
+    --text-secondtitle: 21px;
+    --text-mtitle: 18px;
+    --text-mparrafo: 14px;
+    --text-msecondtitle: 16;
+
+    --text-iconpreheader: 28px;
+}
+
+/* --text-title: 28px;
+    --text-parrafo: 24px;
+    --text-secondtitle: 24px;
+    --text-mtitle: 20px;
+    --text-mparrafo: 17px;
+    --text-msecondtitle: calc(var(--text-secondtitle)*0.1);
+
+    --text-iconpreheader: 40px; */
+
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.1;
+}

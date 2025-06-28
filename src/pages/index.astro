@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import CheckInOut from '../components/CheckInOut.astro';
+import Bienvenida from '../components/Bienvenida.astro';
+import Atractivos from '../components/Atractivos.astro';
+import Testimonios from '../components/Testimonios.astro';
+import BlogIndex from '../components/BlogIndex.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+export const title = 'Inicio';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title={ title }>
+	<Hero />
+	<CheckInOut />
+	<Bienvenida />
+	<Atractivos />
+	<Testimonios />
+	<BlogIndex />
 </Layout>
+
+<script src="../assets/js/pages.js"></script>

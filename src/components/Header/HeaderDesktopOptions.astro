@@ -1,0 +1,28 @@
+---
+/* interface Props {
+    page_open: string;
+    page_title: string;
+}
+
+const { page_open, page_title } = Astro.props; */
+
+interface Props {
+  page_title: string;
+  page_open?: string;
+}
+
+const { page_title } = Astro.props;
+console.log("page_title:", page_title); // Para debug
+const page_open = page_title.toLowerCase(); // Convierte a minúsculas
+const url = page_open === 'inicio' ? '/' : `/${page_open}`;
+---
+
+
+<li class="leading-[164%] relative hover:text-secondary hover:scale-110 transition-all duration-500">
+    <a  href={ url } 
+        class="text-lg">
+        { page_title }
+    </a>
+</li>
+
+
